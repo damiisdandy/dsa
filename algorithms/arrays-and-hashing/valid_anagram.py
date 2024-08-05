@@ -1,6 +1,5 @@
 from collections import defaultdict
 
-
 def isAnagram(s: str, t: str) -> bool:
     # edgecase for values of unequal length (e.g ana & anagram)
     if len(s) != len(t):

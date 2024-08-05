@@ -8,6 +8,6 @@ def twoSum(nums: List[int], target: int) -> List[int]:
         diff = target - num
         if diff in prev_hashmap:
             return [prev_hashmap[diff], i]
-        # store elements seen
+        # store elements seen (should be the last thing to do, so we do not repeat values)
         prev_hashmap[num] = i
     return [-1, -1]
